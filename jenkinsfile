@@ -1,8 +1,9 @@
 pipeline
 {
     agent any
-    tools{
-        node 'node:latest'
+    tools
+    {
+        nodejs 'nodejs 18'
     }
     stages 
     {
