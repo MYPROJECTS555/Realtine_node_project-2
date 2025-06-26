@@ -1,0 +1,19 @@
+pipeline
+{
+    agent any
+    tools{
+        node 'node:latest'
+    }
+    stages 
+    {
+        stage('git-checkout')
+        {
+            steps
+            {
+              git branch:'master',url:'https://github.com/MYPROJECTS555/Realtine_node_project-2.git'
+            }
+            
+        }
+        
+    }
+}
