@@ -12,5 +12,20 @@ pipeline {
                 git branch:'main',url:'https://github.com/MYPROJECTS555/SimpleJavaCodeTest.git'
             }
         }
+        stage('maven-compile')
+        {
+            steps
+            {
+                sh 'maven compile'
+            
+            }
+        }
+        stage('build')
+        {
+            steps
+            {
+                sh ' maven clean install '
+            }
+        }
 }
 }
