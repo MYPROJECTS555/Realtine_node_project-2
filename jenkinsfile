@@ -1,14 +1,13 @@
 pipeline {
     agent any
     tools {
-        // Ensure 'NodeJS 18' (or whatever you use) EXACTLY matches
-        // the name configured in Jenkins > Manage Jenkins > Global Tool Configuration > NodeJS installations.
+        
         nodejs 'NodeJS 18' 
     }
     stages {
         stage('Checkout') {
             steps {
-                // Adjust the URL and branch if necessary
-                git url: 'https://github.com/MYPROJECTS555/Realtine_node_project-2.git', branch: 'main'
+                
+                git branch:'main',url:'https://github.com/MYPROJECTS555/Realtine_node_project-2.git'
             }
         }
