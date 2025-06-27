@@ -16,7 +16,7 @@ pipeline {
         {
             steps
             {
-                sh 'maven compile'
+                sh ''maven compile ''
             
             }
         }
@@ -24,7 +24,7 @@ pipeline {
         {
             steps
             {
-                sh ' maven clean install '
+                sh ''maven clean install''
             }
         }
 }
