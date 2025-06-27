@@ -1,30 +1,13 @@
 pipeline {
     agent any
     tools {
-        
-       jdk 'java-11'
-       maven 'maven'
-    }
+           NodeJS 'NodeJS-18'
+          }
     stages {
         stage('Checkout') {
             steps {
                 
-                git branch:'main',url:'https://github.com/MYPROJECTS555/SimpleJavaCodeTest.git'
-            }
-        }
-        stage('maven-compile')
-        {
-            steps
-            {
-                sh "mvn compile"
-             }
-        }
-        stage('build')
-        {
-            steps
-            {
-                sh "mvn clean install"
-                  
+                git branch:'master',url:'https://github.com/MYPROJECTS555/Realtine_node_project-2.git'
             }
         }
 }
