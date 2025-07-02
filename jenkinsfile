@@ -1,14 +1,18 @@
-pipeline {
+pipeline 
+{
     agent any
-    tools {
+    tools 
+          {
            node-js 'NodeJS 18'
           }
     stages {
-        stage('Checkout') {
-            steps {
+        stage('Checkout') 
+             {
+            steps 
+                {
                 
                 git branch:'master',url:'https://github.com/MYPROJECTS555/Realtine_node_project-2.git'
-            }
+                }
+             }
         }
-}
-}
+ }
