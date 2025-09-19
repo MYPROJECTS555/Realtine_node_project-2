@@ -1,0 +1,29 @@
+-- multi agent pipline
+pipeline
+{
+agent any
+stages
+{
+stage('git-clone')
+   {
+     steps
+         { 
+          git brnach :'main', url:''
+          }
+   }
+  stage('docker-container')
+ {
+  steps
+      {
+      sh ' docker build -t nameisvikas/node:version . '
+      }
+ }
+stage('create container')
+ {
+  steps
+      {
+       sh ' docker run -it -d --name container-1 -p 3000:3000  nameisvikas/node:version '
+      }
+}
+}
+}
