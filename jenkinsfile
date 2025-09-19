@@ -13,7 +13,7 @@ stage('git-clone')
           git brnach :'main', url:'https://github.com/MYPROJECTS555/Realtine_node_project-2.git'
           }
    }
-  stage('docker-container')
+stage('docker-container')
  {
   steps
       {
