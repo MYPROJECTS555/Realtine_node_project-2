@@ -1,6 +1,9 @@
 pipeline
 {
-agent any
+agent 
+{
+lable: 'Prod'
+}
 stages
 {
 stage('git-clone')
