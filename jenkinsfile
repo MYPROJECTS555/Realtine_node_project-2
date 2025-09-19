@@ -10,7 +10,7 @@ stage('git-clone')
    {
      steps
          { 
-          git brnach :'main', url:'https://github.com/MYPROJECTS555/Realtine_node_project-2.git'
+          git branch :'main', url:'https://github.com/MYPROJECTS555/Realtine_node_project-2.git'
           }
    }
 stage('docker-container')
