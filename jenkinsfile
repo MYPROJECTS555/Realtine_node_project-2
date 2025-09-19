@@ -1,14 +1,17 @@
 -- multi agent pipline
 pipeline
 {
-agent any
+agent 
+{
+label 'Prod'
+}
 stages
 {
 stage('git-clone')
    {
      steps
          { 
-          git brnach :'main', url:''
+          git brnach :'main', url:'https://github.com/MYPROJECTS555/Realtine_node_project-2.git'
           }
    }
   stage('docker-container')
